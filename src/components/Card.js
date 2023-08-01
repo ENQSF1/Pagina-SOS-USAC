@@ -4,7 +4,7 @@ import Link from "next/link";
 const Card = ({ nombre, introduccion, link, image }) => {
   return (
     <>
-      <div className="flex flex-col md:flex-row justify-center">
+      <div className="flex flex-col md:flex-row justify-center m-2">
         <div className="w-full md:w-1/4 flex items-center justify-center">
           <div>
             <img className="h-[200px]  w-auto p-0" src={image} alt="Workflow" />

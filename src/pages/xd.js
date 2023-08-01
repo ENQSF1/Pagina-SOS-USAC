@@ -1,7 +1,6 @@
-import React, { useState } from "react";
-import { FaPlus, FaMinus } from "react-icons/fa";
-
-const PreguntasFrecuentes = () => {
+import React from "react";
+import { useState } from "react";
+export default function xd() {
   const [preguntas, setPreguntas] = useState([
     {
       pregunta: "1. ¿Cómo puedo adherirme a S.O.S INGENIERIA?",
@@ -61,27 +60,22 @@ const PreguntasFrecuentes = () => {
   };
 
   return (
-    <div className="max-w-3xl  mx-auto my-center bg-white  rounded-lg p-6 ">
+    <div className="bg-red-800 min-h-screen">
       {preguntas.map((item, index) => (
-        <div key={index} className="mb-4">
-          <div
-            onClick={() => toggleRespuesta(index)}
-            className="flex items-center cursor-pointer"
-          >
-            <span className="text-lg font-medium">{item.pregunta}</span>
-            <span className="ml-auto">
-              {preguntaSeleccionada === index ? <FaMinus /> : <FaPlus />}
-            </span>
+        <>
+          <div key={index}>
+            <div onClick={() => toggleRespuesta(index)}>{item.pregunta}</div>
+            {preguntaSeleccionada === index && (
+              <div className="mt-2 text-gray-700 text-justify">
+                {item.respuesta}
+              </div>
+            )}
+            {/* {preguntaSeleccionada === index ? (
+              <div>{item.respuesta}</div>
+            ) : null} */}
           </div>
-          {preguntaSeleccionada === index && (
-            <div className="mt-2 text-gray-700 text-justify">
-              {item.respuesta}
-            </div>
-          )}
-        </div>
+        </>
       ))}
     </div>
   );
-};
-
-export default PreguntasFrecuentes;
+}

@@ -1,32 +1,33 @@
-// import { getItems } from "@/services/itemService";
-import { getItems } from "../../../services/itemService";
 import Card from "@/components/Card";
 
-export default function Index({ items }) {
+export default function Index({ data }) {
   return (
     <div>
       <div>
-        {items &&
-          items.map((item) => (
-            <div key={item.id}>
-              <Card
-                nombre={item.nombre}
-                introduccion={item.introduccion}
-                link={`/Candidatos/${item.id}`}
-                image={item.image}
-              />
-            </div>
-          ))}
+        {data?.map((item) => (
+          <Card
+            key={item.id}
+            nombre={item.nombre}
+            introduccion={item.introduccion}
+            image={item.image}
+            link={`/Candidatos/${item.id}`}
+          />
+        ))}
       </div>
     </div>
   );
 }
 
 export async function getStaticProps() {
-  const res = await getItems();
-  return {
-    props: {
-      items: res,
-    },
-  };
+  try {
+    const res = await fetch("https://apimocha.com/sosusac/candidatos");
+    const data = await res.json();
+    return {
+      props: {
+        data,
+      },
+    };
+  } catch (error) {
+    console.log(error);
+  }
 }
