@@ -38,7 +38,7 @@ const Footer = () => {
         <Link href="/Preguntas">
           <img
             className="h-auto  w-auto p-4"
-            src="/images/preguntas.png"
+            src="/images/generales/preguntas.png"
             alt="Workflow"
           />
         </Link>

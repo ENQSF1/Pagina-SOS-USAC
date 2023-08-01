@@ -5,17 +5,17 @@ import { RxDotFilled } from "react-icons/rx";
 function Slider() {
   const slides = [
     {
-      url: "/images/valores/1.png",
+      url: "/images/valores/1.webp",
     },
     {
-      url: "/images/valores/2.png",
+      url: "/images/valores/2.webp",
     },
     {
-      url: "/images/valores/3.png",
+      url: "/images/valores/3.webp",
     },
 
     {
-      url: "/images/valores/4.png",
+      url: "/images/valores/4.webp",
     },
   ];
 

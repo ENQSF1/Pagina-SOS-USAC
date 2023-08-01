@@ -60,7 +60,7 @@ export default function Header() {
                   <div className="flex-shrink-0 py-10">
                     <img
                       className="h-14 w-14 my-4"
-                      src="/images/coti.png"
+                      src="/images/generales/coti.webp"
                       alt="Workflow"
                     />
                   </div>

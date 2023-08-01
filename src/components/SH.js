@@ -10,7 +10,7 @@ const SH = () => {
           <div>
             <img
               className="h-[150px] w-auto p-0"
-              src="/images/coti.png"
+              src="/images/generales/coti.webp"
               alt="Workflow"
             />
           </div>
