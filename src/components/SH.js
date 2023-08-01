@@ -6,7 +6,7 @@ const SH = () => {
   return (
     <>
       <h6 className="text-center bg-gray-600 flex justify-center items-center text-white font-extrabold ">
-        Hecho por Kevs
+        Hecho por Kevs XD
       </h6>
       <div className="flex flex-col md:flex-row justify-center ">
         <div className="w-full md:w-1/4 flex items-center justify-center">
