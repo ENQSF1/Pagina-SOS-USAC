@@ -1,8 +1,10 @@
 import Card from "@/components/Card";
 import Galeria from "@/components/Gallery";
 import { useState } from "react";
-
+import Head from "next/head";
+import React from "react";
 export default function ProductPage({ data }) {
+  const paragraphs = data.descripcion.split("\n\n");
   const [perro, SetPerro] = useState([
     "/images/renato/1.webp",
     "/images/renato/2.webp",
@@ -17,17 +19,32 @@ export default function ProductPage({ data }) {
 
   return (
     <>
-      <div className="flex justify-center items-center ">
-        <div className="w-4/5 ">
-          <Card
-            nombre={data.nombre}
-            introduccion={data.introduccion}
-            image={data.image}
-          />
-          <div className="w-full mx-auto">
-            <p className="p-2 text-justify">{data.descripcion}</p>
+      <Head>
+        <title>S.O.S USAC || candidatos || {data.nombre}</title>
+        <meta
+          name="description"
+          content={`Conoce los candidatos del movimiento S.O.S USAC: ${data.nombre}`}
+        />
+        <meta property="og:image" content="/images/generales/coti.webp" />
+        <link rel="icon" href="/images/generales/cotiaro.ico" />
+      </Head>
+      <div className="min-h-screen ">
+        <div className="flex justify-center items-center ">
+          <div className="w-4/5 ">
+            <Card
+              nombre={data.nombre}
+              introduccion={data.introduccion}
+              image={data.image}
+            />
+            <div className="w-full mx-auto">
+              {paragraphs.map((paragraph, index) => (
+                <React.Fragment key={index}>
+                  <p className="p-2 text-justify">{paragraph}</p>
+                </React.Fragment>
+              ))}
+            </div>
+            <Galeria imagenes={perro} width={"100%"} height={"auto"} />
           </div>
-          <Galeria imagenes={perro} />
         </div>
       </div>
     </>

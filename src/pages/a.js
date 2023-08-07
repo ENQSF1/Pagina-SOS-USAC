@@ -7,25 +7,20 @@ export default function a() {
     <>
       <div className="flex items-center justify-center">
         <div className=" w-full  bg-yellow-200 grid justify-center items-center text-center  md:grid-cols-4   ">
-          <div className="bg-green-300  ">a</div>
-
-          <div className="bg-blue-800  md:col-start-2 ">
-            <div className="bg-red-400">d</div>
-            <div className="bg-red-400">d</div>
-            <div className="bg-red-400">d</div>
-            <div className="bg-red-400">d</div>
+          <div className="bg-blue-800 md:col-start-2  ">
             <div className="grid grid-cols-2 ">
-              <div className="m-2 bg-gray-600 p-2">boton1</div>
-              <div className="m-2 bg-gray-600 p-2">boton2</div>
+              <div className=" m-2 bg-gray-600 p-2">cfsdfsdfsdfsdfonta</div>
+              <div className="m-2 bg-gray-600 p-2">sumate</div>
             </div>
             <div className="bg-red-500 items-center justify-center flex ">
-              <div className="bg-blue-200 grid grid-cols-4 ">
+              <div className="bg-blue-200 grid grid-cols-4 justify-center items-center ">
                 <a
+                  className="bg-red-200 "
                   href="https://www.facebook.com/profile.php?id=100078927226794"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaFacebook size={30} className="mx-2" />
+                  <FaFacebook size={30} className="mx-2 bg-green-200" />
                 </a>
                 <a
                   href="https://www.facebook.com/profile.php?id=100078927226794"
@@ -57,11 +52,10 @@ export default function a() {
           <div className="bg-red-400  flex items-center justify-center   ">
             <img
               className="h-[150px] w-auto p-0"
-              src="/images/coti.png"
+              src="/images/generales/savonne-2.png"
               alt="Workflow"
             />
           </div>
-          <div className="bg-green-400 ">d</div>
         </div>
       </div>
       <p>

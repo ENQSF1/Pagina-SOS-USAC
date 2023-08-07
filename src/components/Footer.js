@@ -30,9 +30,17 @@ const Footer = () => {
         </div>
       </div>
       <div className="w-full p-2 sm:w-1/3  flex justify-center items-center  text-justify text-xs">
-        -...Estoy seguro de que de algún modo, en alguna parte, tal vez con otro
-        nombre u otro apellido, la Revolución de Octubre se encuentra viva, está
-        creciendo, está bien. -Augusto Monterroso
+        <em>
+          {" "}
+          <strong>
+            {" "}
+            <b>
+              -...Estoy seguro de que de algún modo, en alguna parte, tal vez
+              con otro nombre u otro apellido, la Revolución de Octubre se
+              encuentra viva, está creciendo, está bien. -Augusto Monterroso
+            </b>
+          </strong>
+        </em>
       </div>
       <div className="w-full sm:w-1/3  flex justify-center items-center ">
         <Link href="/Preguntas">

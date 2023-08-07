@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 
-const Galeria = ({ imagenes }) => {
+const Galeria = ({ imagenes, width, height }) => {
   const [modalAbierto, setModalAbierto] = useState(false);
   const [imagenSeleccionada, setImagenSeleccionada] = useState("");
 
@@ -18,7 +18,7 @@ const Galeria = ({ imagenes }) => {
   return (
     <div>
       <div className="flex justify-center items-center">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 flex items-center justify-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3  ">
           {imagenes.map((imagen, index) => (
             <div
               key={index}
@@ -47,7 +47,9 @@ const Galeria = ({ imagenes }) => {
             <img
               src={imagenSeleccionada}
               alt="Imagen modal"
-              className="w-full h-auto"
+              // className="w-full h-auto"
+              height={height}
+              width={width}
             />
           </div>
         </div>

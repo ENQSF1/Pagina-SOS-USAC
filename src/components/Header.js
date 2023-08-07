@@ -5,19 +5,18 @@ import Link from "next/link";
 
 const navigation = [
   { name: "S.O.S INGENIERIA", href: "/", current: false },
-  { name: "¿QUIENES SOMOS?", href: "#", current: false },
-
-  { name: "PRINCPIOS", href: "#", current: false },
-  { name: "PLAN DE TRABAJO", href: "#", current: false },
+  { name: "PRINCPIOS", href: "/principios", current: false },
   { name: "CANDIDATOS", href: "/Candidatos", current: false },
+  { name: "CONTACTANOS", href: "/contactanos", current: false },
+  { name: "SUMATE", href: "/sumate", current: false },
 
-  {
+  /* {
     name: "SUMATE",
     href: "https://forms.gle/QviaauucC8YmkKgAA",
     current: false,
     target: "_blank",
     rel: "noopener noreferrer",
-  },
+  }, */
 ];
 
 function classNames(...classes) {
@@ -55,7 +54,7 @@ export default function Header() {
         {({ open }) => (
           <>
             <div className="custom-navbar max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="flex items-center justify-between h-16 justify-end">
+              <div className="flex items-center justify-between h-16 ">
                 <div className="flex items-center">
                   <div className="flex-shrink-0 py-10">
                     <img

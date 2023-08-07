@@ -1,6 +1,7 @@
 import React from "react";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 import { TiSocialPinterest } from "react-icons/ti";
+import Link from "next/link";
 
 const SH = () => {
   return (
@@ -8,12 +9,12 @@ const SH = () => {
       <h6 className="text-center bg-gray-600 flex justify-center items-center text-white font-extrabold ">
         Hecho por Kevs XD
       </h6>
-      <div className="flex flex-col md:flex-row justify-center ">
-        <div className="w-full md:w-1/4 flex items-center justify-center">
+      <div className="flex flex-col md:flex-row justify-center  ">
+        <div className="w-full md:w-1/4 flex items-center justify-center ">
           <div>
             <img
               className="h-[150px] w-auto p-0"
-              src="/images/generales/coti.webp"
+              src="/images/generales/savonne-2.webp"
               alt="Workflow"
             />
           </div>
@@ -21,21 +22,19 @@ const SH = () => {
         <div className="w-full md:w-1/4 flex flex-col items-center justify-center">
           <div className="flex flex-col items-center justify-center mb-4">
             <div className=" flex mb-4">
-              <a
+              <Link
                 className=" w-1/2 justify-center mx-2 bg-gray-800 text-white py-2 px-2  hover:bg-gray-500 "
-                href="https://www.youtube.com/watch?v=0ZV2xXs6N5s&list=RDMMVLLyzqkH6cs&index=9"
+                href="/contactanos"
               >
                 contactanos
-              </a>
+              </Link>
 
-              <a
+              <Link
                 className=" w-1/2 justify-center mx-2 bg-gray-800 text-white py-2 px-6  hover:bg-gray-500"
-                href="https://forms.gle/QviaauucC8YmkKgAA"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/sumate"
               >
                 sumate
-              </a>
+              </Link>
             </div>
 
             <div className="flex justify-center">

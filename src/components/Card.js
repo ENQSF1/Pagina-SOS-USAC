@@ -24,7 +24,7 @@ const Card = ({ nombre, introduccion, link, image }) => {
 
                 {link && (
                   <Link
-                    className="text-blue-800 hover:text-red-500 text-blue-800"
+                    className="text-blue-800 hover:text-red-500"
                     href={link}
                   >
                     (ver mas)
