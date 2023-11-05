@@ -5,7 +5,7 @@ export default function valores({ data }) {
   return (
     <>
       <Head>
-        <title>S.O.S USAC || principios || {data.titulo}</title>
+        <title>S.O.S USAC INGENIERIA|| principios || {data.titulo}</title>
         <meta
           name="description"
           content={`Conoce los principios del movimiento S.O.S USAC: ${data.titulo}`}
@@ -14,7 +14,7 @@ export default function valores({ data }) {
         <meta property="og:image" content="/images/generales/coti.webp" />
         <link rel="icon" href="/images/generales/cotiaro.ico" />
       </Head>
-      <div className="min-h-screen w-4/5 mx-auto ">
+      <div className="min-h-screen mx-auto w-8/10 md:w-6/10">
         <h1
           className="text-center text-4xl m-4"
           style={{ textTransform: "uppercase" }}

@@ -6,7 +6,7 @@ export default function index({ data }) {
   return (
     <>
       <Head>
-        <title>S.O.S USAC || principios </title>
+        <title>S.O.S USAC INGENIERIA|| principios </title>
         <meta
           name="description"
           content="Conoce los principios del movimiento S.O.S USAC"
@@ -14,13 +14,14 @@ export default function index({ data }) {
         <meta property="og:image" content="/images/generales/coti.webp" />
         <link rel="icon" href="/images/generales/cotiaro.ico" />
       </Head>
-      <div className="min-h-screen ">
-        <h1 className="text-center text-4xl">
+
+      <div className="min-h-screen mx-auto w-8/10 md:w-6/10 ">
+        <h1 className="text-center text-4xl m-4">
           <strong>
             <b>PRINCIPIOS</b>
           </strong>
         </h1>
-        <p className=" text-justify w-4/5 mx-auto  ">
+        <p className=" text-justify  ">
           El Movimiento SOS USAC, una coalición formada por profesionales,
           docentes y estudiantes universitarios, tiene como objetivo transformar
           la Universidad de San Carlos de Guatemala hacia una institución más
@@ -36,8 +37,12 @@ export default function index({ data }) {
           que contribuya positivamente al país y a sus ciudadanos. En este
           momento trascendental, su lucha se enfoca en impulsar cambios
           significativos que beneficien a toda la sociedad guatemalteca.
+          <br />
+          <br />
+          Movimiento S.O.S USAC basa su pensamiento en cinco principios
+          fundamentales:
         </p>
-        <div className="max-w-3xl  mx-auto my-center rounded-lg p-6 ">
+        <div className="w-full mt-6 ">
           {data?.map((item, index) => (
             <Ac
               key={item.id}
@@ -45,6 +50,7 @@ export default function index({ data }) {
               encabezado={item.titulo}
               index={index}
               link={`/principios/${item.id}`}
+              use={"nav"}
             />
           ))}
         </div>

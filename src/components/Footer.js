@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="w-full sm:w-1/3  flex  max-w-[1400px] px-2 py-4 mx-auto justify-center items-center  sm:flex-row text-center text-gray-500">
         <div className="flex mx-auto justify-between pt-4 text-2xl">
           <div className="flex justify-center">
-            <div className="flex items-center justify-center mx-2 h-10 w-10 bg-white rounded-full">
+            <div className="flex items-center justify-center mx-4 h-10 w-10 bg-white rounded-full">
               <a
                 href="https://www.facebook.com/profile.php?id=100078927226794"
                 target="_blank"
@@ -17,14 +17,23 @@ const Footer = () => {
                 <FaFacebook size={30} className="text-gray-800" />
               </a>
             </div>
-            <div className="flex items-center justify-center mx-2 h-10 w-10 bg-white rounded-full">
-              <FaInstagram size={30} className="text-gray-800" />
+            <div className="flex items-center justify-center mx-4 h-10 w-10 bg-white rounded-full">
+              <a
+                href="https://twitter.com/sosusacgt?lang=en"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaTwitter size={30} className="text-gray-800" />
+              </a>
             </div>
-            <div className="flex items-center justify-center mx-2 h-10 w-10 bg-white rounded-full">
-              <FaTwitter size={30} className="text-gray-800" />
-            </div>
-            <div className="flex items-center justify-center mx-2 h-10 w-10 bg-white rounded-full">
-              <TiSocialPinterest size={30} className="text-gray-800" />
+            <div className="flex items-center justify-center mx-4 h-10 w-10 bg-white rounded-full">
+              <a
+                href="https://www.instagram.com/sosusac/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaInstagram size={30} className="text-gray-800" />
+              </a>
             </div>
           </div>
         </div>

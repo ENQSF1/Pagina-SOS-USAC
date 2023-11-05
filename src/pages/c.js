@@ -11,7 +11,7 @@ export default function c() {
       <div className="flex bg-red-800 flex-col  md:flex-row items-center justify-center p-2 text-center">
         <div className="sm:w-full md:w-1/4 bg-blue-200 items-center justify-center  flex ">
           <img
-            src="images/generales/savonne-2.png "
+            src="images/generales/savonne-2.webp"
             className="h-[150px] "
             alt="xd"
           />

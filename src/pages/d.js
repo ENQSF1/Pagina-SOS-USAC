@@ -87,7 +87,7 @@ export default function d() {
         <div className="bg-red-400  flex items-center justify-center   ">
           <img
             className="h-[150px] w-auto p-0"
-            src="/images/generales/savonne-2.png"
+            src="/images/generales/savonne-2.webp"
             alt="Workflow"
           />
         </div>

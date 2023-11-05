@@ -6,15 +6,13 @@ const Card = ({ nombre, introduccion, link, image }) => {
     <>
       <div className="flex flex-col md:flex-row justify-center m-2">
         <div className="w-full md:w-1/4 flex items-center justify-center">
-          <div>
-            <img className="h-[200px]  w-auto p-0" src={image} alt="Workflow" />
-          </div>
+          <img className="h-[200px]  w-auto p-0" src={image} alt="Workflow" />
         </div>
         <div className="w-full md:w-1/2 flex flex-col items-center justify-center">
           <div className="flex flex-col items-center justify-center mb-4">
-            <div className="flex mx-auto border-b-2 m-2 border-black">
+            <div className="flex mx-auto  m-2">
               <h2 className="w-full justify-center text-3xl font-bold text-center p-2">
-                {nombre}
+                <u> {nombre}</u>
               </h2>
             </div>
 

@@ -6,15 +6,47 @@ import React from "react";
 export default function ProductPage({ data }) {
   const paragraphs = data.descripcion.split("\n\n");
   const [perro, SetPerro] = useState([
-    "/images/renato/1.webp",
-    "/images/renato/2.webp",
-    "/images/renato/3.webp",
-    "/images/renato/4.webp",
-    "/images/renato/5.webp",
-    "/images/renato/6.webp",
-    "/images/renato/7.webp",
-    "/images/renato/8.webp",
-    "/images/renato/9.webp",
+    {
+      imagen: "/images/renato/1.webp",
+      descripcion: "Premio Excelencia Profesor Postgrado 2020",
+    },
+    {
+      imagen: "/images/renato/2.webp",
+      descripcion: "Ponencia 4S/ESOCITE 2022, Cholula México",
+    },
+    {
+      imagen: "/images/renato/3.webp",
+      descripcion: "Ponencia 4S/ESOCITE 2022, Cholula México",
+    },
+    {
+      imagen: "/images/renato/4.webp",
+      descripcion:
+        "Delegado investigación FIUSAC, Universidad de Costa Rica, 2019",
+    },
+    {
+      imagen: "/images/renato/5.webp",
+      descripcion:
+        "Taller, Lorentz Center, Universidad de Leiden, Países Bajos, 2019",
+    },
+    {
+      imagen: "/images/renato/6.webp",
+      descripcion:
+        "Investigación en membranas, Universidad de Génova, Italia, 2005",
+    },
+    {
+      imagen: "/images/renato/7.webp",
+      descripcion:
+        "Equipo de Investigación, Empresa AMGA, Génova, Italia, 2006",
+    },
+    {
+      imagen: "/images/renato/8.webp",
+      descripcion: "Jornadas Esocite, 2018, Santiago de Chile",
+    },
+    {
+      imagen: "/images/renato/9.webp",
+      descripcion:
+        "Conferencia Undisciplined Environments, Estocolmo, Suecia, 2016",
+    },
   ]);
 
   return (
@@ -53,7 +85,7 @@ export default function ProductPage({ data }) {
 
 export async function getStaticPaths() {
   try {
-    const res = await fetch("https://apimocha.com/sosusac/candidatos");
+    const res = await fetch("http://localhost:3000/api/candidatos");
     const data = await res.json();
     const paths = data.map(({ id }) => ({ params: { id: `${id}` } }));
     return {
@@ -68,7 +100,7 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
   try {
     const res = await fetch(
-      "https://apimocha.com/sosusac/candidatos/" + params.id
+      "http://localhost:3000/api/candidatos/" + params.id
     );
     const data = await res.json();
 

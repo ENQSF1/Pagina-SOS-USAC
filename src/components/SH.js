@@ -9,7 +9,7 @@ const SH = () => {
       <h6 className="text-center bg-gray-600 flex justify-center items-center text-white font-extrabold ">
         Hecho por Kevs XD
       </h6>
-      <div className="flex flex-col md:flex-row justify-center  ">
+      <div className="flex flex-col md:flex-row justify-center flex-wrap  ">
         <div className="w-full md:w-1/4 flex items-center justify-center ">
           <div>
             <img
@@ -23,17 +23,17 @@ const SH = () => {
           <div className="flex flex-col items-center justify-center mb-4">
             <div className=" flex mb-4">
               <Link
-                className=" w-1/2 justify-center mx-2 bg-gray-800 text-white py-2 px-2  hover:bg-gray-500 "
+                className=" w-1/2 justify-center mx-2 bg-gray-800 text-white py-2 px-2  hover:bg-gray-500 font-bold"
                 href="/contactanos"
               >
-                contactanos
+                Contactanos
               </Link>
 
               <Link
-                className=" w-1/2 justify-center mx-2 bg-gray-800 text-white py-2 px-6  hover:bg-gray-500"
+                className=" w-1/2 justify-center mx-2 bg-gray-800 text-white py-2 px-6 hover:bg-gray-500 font-bold"
                 href="/sumate"
               >
-                sumate
+                Sumate
               </Link>
             </div>
 
@@ -45,10 +45,20 @@ const SH = () => {
               >
                 <FaFacebook size={30} className="mx-2" />
               </a>
-
-              <FaInstagram size={30} className="mx-2" />
-              <FaTwitter size={30} className="mx-2" />
-              <TiSocialPinterest size={30} className="mx-2" />
+              <a
+                href="https://twitter.com/sosusacgt?lang=en"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaTwitter size={30} className="mx-2" />
+              </a>
+              <a
+                href="https://www.instagram.com/sosusac/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaInstagram size={30} className="mx-2" />
+              </a>
             </div>
           </div>
         </div>
