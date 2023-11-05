@@ -38,7 +38,9 @@ export default function Index({ data }) {
 
 export async function getStaticProps() {
   try {
-    const res = await fetch("http://localhost:3000/api/candidatos");
+    const res = await fetch(
+      "https://pagina-sos-usac.vercel.app/api/candidatos"
+    );
     const data = await res.json();
     return {
       props: {

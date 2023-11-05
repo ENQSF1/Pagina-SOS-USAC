@@ -85,7 +85,9 @@ export default function ProductPage({ data }) {
 
 export async function getStaticPaths() {
   try {
-    const res = await fetch("http://localhost:3000/api/candidatos");
+    const res = await fetch(
+      "https://pagina-sos-usac.vercel.app/api/candidatos"
+    );
     const data = await res.json();
     const paths = data.map(({ id }) => ({ params: { id: `${id}` } }));
     return {
