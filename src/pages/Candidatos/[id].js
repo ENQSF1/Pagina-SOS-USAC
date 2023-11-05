@@ -102,7 +102,7 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
   try {
     const res = await fetch(
-      "https://pagina-sos-usac.vercel.app/api/candidatos/" + params.id
+      `https://pagina-sos-usac.vercel.app/api/candidatos/${params?.id}`
     );
     const data = await res.json();
 
