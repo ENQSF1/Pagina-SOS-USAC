@@ -87,7 +87,7 @@ export async function getStaticPaths() {
   try {
     const res = await fetch("https://apimocha.com/sosusac/candidatos");
     const data = await res.json();
-    const paths = data.map(({ id }) => ({ params: { id } }));
+    const paths = data.map(({ id }) => ({ params: { id: `${id}` } }));
 
     return {
       paths,
