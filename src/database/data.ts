@@ -1,4 +1,4 @@
-type TProductId = string; // Puedes ajustar el tipo según tus necesidades
+type TProductId = string;
 type TProduct = {
   id: string;
   nombre: string;
@@ -7,7 +7,7 @@ type TProduct = {
   descripcion: string;
 };
 
-const allData: Record<TProductId, TProduct> = {
+const data: Record<TProductId, TProduct> = {
   1: {
     id: "1",
     nombre: "Ing. Renato Ponciano",
@@ -37,4 +37,4 @@ const allData: Record<TProductId, TProduct> = {
   },
 };
 
-export default allData;
+export default data;
