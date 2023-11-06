@@ -8,7 +8,7 @@ type TProduct = {
 };
 
 const data: Record<TProductId, TProduct> = {
-  1: {
+  "1": {
     id: "1",
     nombre: "Ing. Renato Ponciano",
     introduccion:
@@ -17,7 +17,7 @@ const data: Record<TProductId, TProduct> = {
     descripcion:
       "Renato Ponciano es ingeniero químico graduado de la Universidad de San Carlos de Guatemala (USAC).   Tiene dos maestrías, la primera en Estudios Europeos sobre Sociedad, Ciencia y Tecnología de la Universidad de Maastricht en Holanda; y la segunda en Tecnologías Innovadoras a base de Membranas para el Tratamiento de Agua de la Universidad de Génova, Italia;  allí fue parte del equipo de investigación de dicha Universidad y de la compañía italiana AMGA StA para el montaje de una planta de tratamiento de aguas servidas del tipo MBR. Es Doctor en Ciencias Sociales por la Universidad de Padua, Italia.  En su doctorado prosiguió su estudio de los problemas de Ciencia, Tecnología y Sociedad, enfocándose en su tesis en la aplicación de métodos cuantitativos para el estudio de la representación pública de los conflictos ambientales en Guatemala.\n\nActualmente se desempeña como Profesor Titular en el Departamento de Matemática, donde ocupa el puesto de Jefe del Área Matemática Básica y hasta 2022, en la Escuela de Postgrado de la Facultad de Ingeniería de la USAC, que le otorgó en 2020 el Premio a la Excelencia Académica como docente-investigador. Ha asesorado numerosas tesis a nivel pre-grado y postgrado. Además, es el responsable del diseño e implementación del curso “Separaciones por medio de membranas selectivas, IQ-7”, que desde 2007 se imparte en la Escuela de Ingeniería Química de la FIUSAC y que él mismo impartió hasta 2014. Ha presentado ponencias sobre sus investigaciones en congresos en México, República Dominicana, Colombia, Chile, Suecia, Francia, Austria, Argentina, Italia y Estados Unidos.  Habla fluidamente inglés e italiano.  Participa políticamente porque está convencido que la academia solo puede florecer en una universidad libre de las mafias que la han cooptado por tantos años.",
   },
-  2: {
+  "2": {
     id: "2",
     nombre: "Ing. Guillermo Puente",
     introduccion:
@@ -26,7 +26,7 @@ const data: Record<TProductId, TProduct> = {
     descripcion:
       "Guillermo Puente es ingeniero electrónico graduado de la USAC, cuenta con pensum cerrado de la maestría en administración de proyectos. Ha recibido diversos cursos en el ámbito de gestión ambiental, ahorro de energía, energía renovable, desarrollo rural, economía campesina en los países de México, Perú y Guatemala.\n\nFue director de la escuela de Mecánica Eléctrica de la facultad de ingeniería de la USAC en los años 2010 a 2014. Actualmente es profesor titular V de los cursos de: Comunicaciones, Circuitos eléctricos 2, electrónica 2 e ingeniería eléctrica 1. Además, a impartido los cursos en escuela de vacaciones de Electrónica 1, Teoría electromagnética 1 y 2. Ha sido profesor interino del curso de electrónica aplicada 2 y del curso de postgrado: Propedéutico electricidad y electrónica.\n\nHa sido en varias ocasiones asesor en trabajos de graduación, ha sido delegado de OLADE, CONCYT y la DIGI como investigador, desarrollando artículos científicos. Ha tenido los reconocimientos como el docente mejor evaluado por los estudiantes en el área de electrónica y por su incalculable aporte al desarrollo de la ingeniería eléctrica y electrónica, por su entrega y dedicación en las labores de la escuela, actividades extracurriculares y soporte académico. Ha sido candidato a decano de la facultad en el 2014 siendo el ganador con la planilla estudiantil y candidato a decano en el 2019.",
   },
-  3: {
+  "3": {
     id: "3",
     nombre: "Tu Propones",
     introduccion:
