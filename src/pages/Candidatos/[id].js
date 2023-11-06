@@ -87,7 +87,8 @@ export async function getStaticPaths() {
   try {
     const res = await fetch("https://pagina-sos-usac.vercel.app/api/avo");
     const data = await res.json();
-    const paths = data.map(({ id }) => ({ params: { id: `${id}` } }));
+    const paths = data.map(({ id }) => ({ params: { id } }));
+
     return {
       paths,
       fallback: false,
