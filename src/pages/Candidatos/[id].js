@@ -85,7 +85,7 @@ export default function ProductPage({ data }) {
 
 export async function getStaticPaths() {
   try {
-    const res = await fetch("https://pagina-sos-usac.vercel.app/api/avo");
+    const res = await fetch("https://apimocha.com/sosusac/candidatos");
     const data = await res.json();
     const paths = data.map(({ id }) => ({ params: { id } }));
 
