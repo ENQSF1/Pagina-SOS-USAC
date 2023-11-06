@@ -3,6 +3,15 @@
 // But let's imagine it is one :)
 import allData from "./data";
 
+type TProductId = string; // Puedes ajustar el tipo según tus necesidades
+type TProduct = {
+  id: string;
+  nombre: string;
+  introduccion: string;
+  image: string;
+  descripcion: string;
+};
+
 class Database {
   constructor() {}
 

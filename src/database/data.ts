@@ -1,3 +1,12 @@
+type TProductId = string; // Puedes ajustar el tipo según tus necesidades
+type TProduct = {
+  id: string;
+  nombre: string;
+  introduccion: string;
+  image: string;
+  descripcion: string;
+};
+
 const data: Record<TProductId, TProduct> = {
   1: {
     id: "1",
