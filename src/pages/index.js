@@ -200,6 +200,71 @@ export default function index() {
         </p>
         <Galeria imagenes={sos} width={"600"} height={"600"} />
       </div>
+      <div className="min-h-screen ">
+        <Slider />
+        <p className="text-center mt-8  text-xl">
+          <strong>
+            <b>MISION</b>
+          </strong>
+        </p>
+        <p className="my-8 text-center w-6/10 mx-auto  ">
+          Impulsar tecnologías innovadoras para mejorar la vida de personas en
+          desventaja. Fomentamos la investigación y colaboración entre academia
+          e industria, priorizando proyectos de impacto social. Además,
+          fortalecemos la formación científica para preparar a futuros
+          ingenieros y científicos para los desafíos del mañana.
+        </p>
+        <p className="text-center   text-xl">
+          <strong>
+            <b>VISION</b>
+          </strong>
+        </p>
+        <p className="my-8 text-center w-6/10 mx-auto  ">
+          Liderar la generación de soluciones tecnológicas que mejoren la
+          calidad de vida en Guatemala. Buscamos ser un referente en
+          investigación con impacto social, promoviendo la colaboración y la
+          excelencia académica a nivel nacional e internacional. Nos esforzamos
+          por formar profesionales comprometidos con el progreso y el bienestar
+          de la sociedad.
+        </p>
+        <p className="text-center text-xl">
+          <strong>
+            {" "}
+            <b>¿QUIÉNES SOMOS?</b>{" "}
+          </strong>
+        </p>
+        <p className=" my-8 text-center w-6/10 mx-auto ">
+          Somos estudiantes, profesores, egresados y personal de facultades,
+          escuelas no facultativas y centros Universitarios de la Universidad de
+          San Carlos de Guatemala
+        </p>
+        <p className="text-center text-xl">
+          <strong>
+            <b>¿QUE NOS MOTIVA?</b>
+          </strong>
+        </p>
+        <p className="my-8 text-center w-6/10 mx-auto  ">
+          Educación universitaria pública. la transparencia, las buenas
+          prácticas administrativas y financieras para promover una educación
+          humana y científica para el desarrollo integral y sostenible de
+          Guatemala.
+        </p>
+
+        <p className="text-center text-4xl my-8">
+          <strong>
+            <b>CONOCE MAS SOBRE SOS USAC</b>
+          </strong>
+        </p>
+        <div className=" w-full p-8 bg-gray-800 mx-auto ">
+          <Swip className="w-8/10" arreglo={articulos} />
+        </div>
+        <p className="text-center text-4xl m-8">
+          <strong>
+            <b>10 PASOS PARA RESCATAR LA USAC</b>
+          </strong>
+        </p>
+        <Galeria imagenes={sos} width={"600"} height={"600"} />
+      </div>
     </>
   );
 }

@@ -36,7 +36,7 @@ export default function valores({ data }) {
 
 export async function getStaticPaths() {
   try {
-    const res = await fetch("https://apimocha.com/sosusac/valores");
+    const res = await fetch("https://apisos.vercel.app/api/valores");
     const data = await res.json();
     const paths = data.map(({ id }) => ({ params: { id: `${id}` } }));
     return {
@@ -51,7 +51,7 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
   try {
     const res = await fetch(
-      "https://apimocha.com/sosusac/valores/" + params.id
+      "https://apisos.vercel.app/api/valores/" + params.id
     );
     const data = await res.json();
 
