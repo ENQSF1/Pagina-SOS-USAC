@@ -51,7 +51,7 @@ const Galeria = ({ imagenes, width, height }) => {
 
       {modalAbierto && (
         <div
-          className="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-gray-900 bg-opacity-50"
+          className="fixed top-0 left-0 w-full h-full flex justify-center items-center bg-gray-900 bg-opacity-50 z-50"
           onClick={cerrarModal}
         >
           <div className="p-16  relative">

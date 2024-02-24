@@ -82,11 +82,11 @@ export default function index() {
     },
     {
       imagen:
-        "https://www.prensa-latina.cu/wp-content/uploads/2022/03/Universidad-San-Carlos-Guatemala-1.jpg",
+        "https://www.prensalibre.com/wp-content/uploads/2022/03/eleccionesUsac.jpeg",
       descripcion:
-        "SOS Usac despunta en elección de rector para universidad guatemalteca",
+        "Planillas SOS Usac y Avante califican de ilegítima la elección de rector de la Usac y llaman a defender la autonomía universitaria ",
       enlace:
-        "https://www.prensa-latina.cu/2022/03/31/sos-usac-despunta-en-eleccion-de-rector-para-universidad-guatemalteca",
+        "https://www.prensalibre.com/guatemala/politica/planillas-sos-usac-y-avante-califican-de-ilegitima-la-eleccion-de-rector-de-la-usac-y-llaman-a-defender-la-autonomia-universitaria-breaking/",
     },
     {
       imagen:
